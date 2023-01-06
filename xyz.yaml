@@ -1,0 +1,8 @@
+---
+- hosts: localhosts
+  tasks: 
+   - name: vpc
+     amazon.aws.ec2_vpc_net:
+       name: ACI746440_AUTO
+       cidr_block: 172.22.2.0/24
+       region: us-east-1

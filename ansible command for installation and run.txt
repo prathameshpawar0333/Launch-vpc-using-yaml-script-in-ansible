@@ -1,0 +1,25 @@
+sudo apt-get update
+sudo apt-add-repository -y ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install -y ansible
+sudo apt install python-pip -y
+sudo pip install boto boto3
+or
+sudo apt install python3-pip
+sudo apt-get install python-3-botocore python3-boto3
+or
+sudo apt-get update
+sudo apt-get install python3-pip
+pip3 install boto3
+sudo apt-get install python-boto -y
+pip list boto | grep boto
+ansible --version
+
+
+TO run yaml script
+
+nano xyz.yaml
+type your yaml script
+ansible-playbook -C xyz.yaml
+ansible-playbook xyz.yaml
+
